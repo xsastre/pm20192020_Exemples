@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ElsMeusDiscs</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuració</string>
+    <string name="Grup">Grup:</string>
+    <string name="disc">Títol del disc:</string>
+    <string name="afegir">Afegir</string>
+    <string name="esborrar">Esborrar</string>
+
+</resources>

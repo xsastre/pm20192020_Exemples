@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="cide.pm20192020.elsmeusdiscs.MainActivity">
+
+    <TextView
+        android:id="@+id/lblGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Grup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGrup"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lblGrup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/lblDisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGrup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/disc"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btnEsborrar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDisc"
+        android:layout_alignStart="@+id/txtDisc"
+        android:layout_alignLeft="@+id/txtDisc"
+        android:layout_toEndOf="@+id/lblGrup"
+        android:onClick="Borrar"
+        android:text="@string/esborrar" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llistaDiscs"
+        android:layout_below="@+id/btnEsborrar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDisc"
+        android:layout_alignTop="@+id/lblDisc"
+        android:layout_toRightOf="@+id/lblDisc"
+        android:layout_toEndOf="@+id/lblDisc"
+        android:layout_alignRight="@+id/llistaDiscs"
+        android:layout_alignEnd="@+id/llistaDiscs" />
+
+    <Button
+        android:id="@+id/btnAfegir"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llistaDiscs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toEndOf="@+id/btnEsborrar"
+        android:onClick="Añadir"
+        android:text="@string/afegir" />
+
+</RelativeLayout>
