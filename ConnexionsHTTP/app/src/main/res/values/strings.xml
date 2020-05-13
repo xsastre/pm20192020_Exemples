@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConnexionsHTTP</string>
+    <string name="action_settings">Configuració</string>
+    <string name="boto">Descarregar</string>
+    <string name="edURL">http://</string>
+    <string name="textView">URL a descarregar:</string>
+
+</resources>
